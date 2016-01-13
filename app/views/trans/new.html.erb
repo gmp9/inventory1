@@ -1,0 +1,4 @@
+<h3>Home</h3>
+<p>Enter a balance: <% @account.balance(1000.00)%></p>
+<p>Enter deposit and/or withdrawal: <% @account.val(100,50)%></p>
+<p>The new balance is: <%= @account.bal + @account.dep - @account.wdl%></p>

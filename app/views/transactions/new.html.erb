@@ -1,0 +1,11 @@
+<% content_for :title do %>Transaction<% end %>
+<h3>Transaction</h3>
+<div class="form">
+  <%= simple_form_for @transaction do |form| %>
+    <%#= form.error_notification %>
+    <%= form.input :bal, autofocus: true %>
+    <%= form.input :dep %>
+    <%= form.input :wdl %>
+    <%= button_to "Calculate" ,:action => "create"%>
+  <% end %>
+</div>
