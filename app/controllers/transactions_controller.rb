@@ -15,13 +15,6 @@ class TransactionsController < ApplicationController
       wdl = params[:transaction]
       @wdl = @transaction.wdl.to_f
 
-      #@bal = 1000.00
-      #@dep = 100.00
-      #@wdl = 50.00
-  
-      #@bal = @transaction.balance
-      #redirect_to root_path
-      #render :show
       render :create
     else
       render :new
