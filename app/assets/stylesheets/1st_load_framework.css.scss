@@ -40,7 +40,8 @@
 // to make views framework-neutral
 main {
   @include twelve-columns;
-  background-color: #eee;
+  background-color: beige;
+  color: sienna;
   }
 section {
   @extend .row;
